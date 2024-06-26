@@ -7,68 +7,112 @@
         <title>mydocument</title>
 
     </head>
+    <style>
+        *{
+            background-color: aliceblue;
+        }
+
+        .fb-submit{
+
+display:flex;
+flex-direction: column;
+text-align: center;
+gap: 15px;
+background-color: white;
+}
+.fb-submit .login{
+border: none;
+outline: none;
+cursor: pointer;
+background: #187718;
+padding: 15px 0;
+border-radius: 6px;
+color: #fff;
+font-size: 1.25;
+font-weight: 300;
+transition: 0.2s ease;
+
+
+}
+.fb-submit .login:hover{
+background: #0d65d9;
+
+}
+        </style>
+
 <body>
-    <form action="./facebook.html">
     
-        <label for="name">name</label>
-        <input type="text" id="name" placeholder="full name">
+    <h1 style="color: #0d65d9;margin-left: 40%;font-size:70px;">Facebook</h1>
+    <div style="display: flex;;align-self: center;" class="middle">
+    
+    <form style="display: block; background-color:white;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0px;
+    width: 100%;
+    margin-left: 35%;
+    margin-bottom: 30%;
+    margin-top: 2%;
+    max-width: 450px;
+    max-height: 100;
+    height: 80%;
+
+
+    border: 2px solid rgb(0, 0, 0);"
+     action="./facebook.html">
+     <h1 style="background-color: white; margin-left: 10%;margin-left: 75px;">   Create a new account</h1>
+     <p style="background-color: white;margin-left: 35%;" >             It's quick and easy</p>
+     <hr>
+      
+        <input  style="background-color: white;width: 95%;height:45%;display:inline-block;font-size: larger;" type="text" id="name" placeholder="                   Mobile number or email address">
         <br>
         <br>
-        <label for="num">phone number</label>
-        <input type="number" id="num" placeholder="phone number">
+        <input style="background-color: white;width: 95%;height:45%;display:inline-block;font-size: larger;" type="password" id="pass" required placeholder="                             New password">
+        
         <br><br>
-        <label for="date">date ofbirth</label>
-        <input type="date" id="date" placeholder="date of birth">
+        <label style="background-color: white;width: 70%;height:45%;display:inline-block; margin-left: 30%; font-size:larger;" for="date">Date Of Birth ?</label><br>
+        <input  style="background-color: white;width: 95%;height:45%;display:inline-block;size: 50%; font-size: larger;" type="date" id="date" placeholder="date of birth">
         <br><br>
-        <label for="pass">password<samp style="color: red;font-size: 30px;">*</samp></label>
-        <input type="password" id="pass" required placeholder="password">
+       <input style="background-color: white;font-size:medium;" type="text" id="name" placeholder="First name">
+       <input style="background-color: white;font-size:medium;"type="text" id="name" placeholder="Surname">
         <br><br>
-        <img src="/IMG_0889.JPG" alt="aaa" height="200px " width="200px">
-        <br> <br>
-        <label for="mail">Email</label>
-        <input type="email" id="mail" placeholder="email">
-        <br><br>
-        <label >gender</label>
-        <input type="radio" name="gender" id="male" value="male">
-        <label for="male">male</label> 
+        <label style=" background-color:white;width:60%;height:45%;display:inline-block; margin-left:35%; font-size:x-large;">Gender</label><br>
+        <input style="margin-left: 30px;" type="radio" name="gender" id="male" value="male">
+        <label style="background-color: white;display: inline-block;margin-left: 30px;" for="male">Male</label> 
         <input type="radio" name="gender" id="female" value="female">
-        <label for="female">female</label> 
+        <label style="background-color: white;display: inline-block;" for="female">female</label> 
         <input type="radio" name="gender" id="other" value="other">
-        <label for="other">other</label> 
+        <label style="background-color: white;display: inline-block; " for="other">other</label> 
+
 
         <br><br>
-        <label >language:</label>
-        <input type="checkbox" name="language" id="eng" value="english">
-        <label for="eng">english</label>
-        <input type="checkbox" name="language" id="hin" value="hindi">
-        <label for="hin">hindi</label>
-        <input type="checkbox" name="language" checked id="mar" value="marathi">
-        <label for="mar">marathi</label>
-        <input type="checkbox" name="language" id="bang" value="bangali">
-        <label for="bang">bangali</label>
-        <br>
-        <br>
 
-        <label for="file">resume</label>
-        <input type="file" id="file" placeholder="resume">
-        <br><br>
-        <label for="count">country</label>
-        <select id="count">
-            <option selected disabled>plese select a country</option>
-            <option value="india">india</option>
-            <option value="australia">australia</option>
-            <option value="nepal">nepal</option>
-            <option value="USA">USA</option>
+        <hr>
+        <p style="background-color: white;font-size: smaller;color: rgb(92, 90, 90);">People who use our service may have uploaded your contact information to Facebook. <a style="background-color: white;" href="https://www.facebook.com/help/637205020878504">Learn more.</a></p>
 
-        </select>
-        <br><br>
-        <button>submit-bin</button>
-        <input type="submit" value="submit-imp">
-        <input type="reset" value="reset">
+        
+        <p style="background-color: white;font-size: smaller;color: rgb(92, 90, 90);">By clicking Sign Up, you agree to our 
+            <a style="background-color: white;" href="https://www.facebook.com/legal/terms/update">Terms</a>
+            <a style="background-color: white;" href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0"> Privacy Policy </a>
+            and
+            <a style="background-color: white;"href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0">Cookies Policy.</a>
+            <br>You may receive SMS notifications from us and can opt out at any time.
+        </p>
+        
+      
+      
+        
+        <div class="fb-submit" >   
+           <button type="submit" class="login">Sign Up</button>
+           
+          <a style="background-color: white;font-size: larger;" href="login.html">Aleady have an account</a>
+          <br><br>
+   </div>
 
         
 
     </form>
+    </div>
     
 </body>
 </html>

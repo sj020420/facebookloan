@@ -4,37 +4,316 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>facebook</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:sans-serif;
+            
+        }
+        body{
+            background-color: #efefef;
+            height:5000px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background:black;
+            padding: 5px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+
+        }
+    .nav-left, .nav-right{
+        display: flex;
+        align-items: center;
+    }
+    .nav-left ul li{
+        list-style: none;
+        display: inline-block;
+    }
+    .nav-left ul li img{
+        width: 28px;
+        margin: 0 15px;
+    }
+    .nav-user-icon img{
+        width: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+   
+    .search-box{
+        background: #efefef;
+        width: 350px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 015px;
+
+    }
+    .search-box img{
+        width: 18px;
+
+    }
+    .search-box input{
+        width: 100%;
+        background: transparent;
+        padding: 10px;
+        outline: none;
+        border: 0;
+
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 5%;
+
+
+    }
+    .left-sidebar{
+     
+        flex-basis: 25%;
+        position: static;
+        top: 70px;
+        align-self: flex-start;
+      
+
+    }
+    .right-sidebar{
+        
+        flex-basis: 20%;
+        position: static;
+        top: 70px;
+        align-self: flex-start;
+        background: white;
+        padding: 20px;
+        border-radius: 4px;color: darkgray;
+       
+
+    }
+    .main-content{
+        flex-basis:47%;
+        
+
+    }
+    .imp-links a, .shortcut-links a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin: 30px;
+        
+        width: fit-content;
+
+    }
+    .imp-links a img{
+        width: 25px;
+        margin-right: 15px;
+
+    }
+    .imp-links
+    {
+        border-bottom:1px solid #ccc;
+
+    }
+    .shortcut-links a img{
+        width: 40px;
+        border-radius: 4px;
+        margin-right: 15px;
+
+
+    }
+    .shortcut-links p{
+        margin: 25px 0;
+        color: darkslategrey;
+        font-weight: 500;
+
+    }
+    .sidebar-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+
+    }
+    .sidebar-title h4{
+        font-weight: 600;
+        font-size: 16px;
+
+    }
+    .sidebar-title a{
+        text-decoration: none;
+        color: blue;
+        font-size: 12px;
+    }
+    .story-gallery{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        
+
+    }
+    .story{
+        flex-basis: 18%;
+        padding-top: 32%;
+        position: relative;
+        background-color: #626262;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+
+
+    }
+    .story img{
+        position: absolute;
+        width: 45%;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+        border-radius: 5px solid #626262;
+
+
+        
+    }
+    .story p{
+        position: absolute;
+        bottom: 10px;
+        width: 100px;
+        text-align: center;
+        color: white
+        ;
+        font-size: 14px;
+
+
+    }
+    
+    
+    </style>
+  
 </head>
-<body>
-    <div class="header">
-		<div id="img1" class="header" >
-			<img src="./facebook.png" alt="facebook" width="100px" height="50px">
-            <input type="text" id="name" placeholder="search facebook " width="60%" height="250px">
-			
-		</div>
+<nav>
 
+<div class="nav-left">
+    
+        <h1 style="color: royalblue;">facebook</h1>
+       
+        <ul>
+            <li><img src="images/notification.png" ></li>
+            <li><img src="images/inbox.png" ></li>
+            <li><img src="images/video.png" ></li>
+          </ul>
+    </div>
+    <div class="nav-right">
 
-
-    <div style="display: flex;">
-        <div style="width: 26%;
-                    background-color: black;
-                    height: 500px;">div 1
-
-
-        </div>
-        <div style="width: 50%;
-                    background-color: aquamarine;
-                    height: 500px;">div 2
-
+        <div class="search-box">
+            <img src="images/search.png">
+            <input type="text" placeholder="search ">
+            
 
         </div>
-        <div style="width: 15%;
-                    background-color: blue;
-                    height: 500px;">div 3
-
+        <div class="nav-user-icon">
+            <img src="images/11.JPG">
 
         </div>
 
     </div>
+    </nav>
+
+
+<div class="container">
+    
+    <div class="left-sidebar">
+        <div class="imp-links">
+            <a href="#">
+                <img src="images/news.png" >
+                latest news
+            </a>
+            <a href="#">
+                <img src="images/friends.png">
+                friends
+            </a>
+            <a href="#">
+                <img src="images/group.png" >
+                groups
+            </a>
+            <a href="#">
+                <img src="images/marketplace.png" >
+                marketplace
+            </a>
+            <a href="#">
+                <img src="images/watch.png" >
+                watch
+            </a>
+            
+
+        </div>
+        <div class="shortcut-links">
+            <p>yours shortcuts</p>
+            <a href="#"><img src="images/shortcut-1.png" >web developers</a>
+            <a href="#"><img src="images/shortcut-2.png" >web designcources</a>
+            <a href="#"><img src="images/shortcut-3.png" >full stack</a>
+            <a href="#"><img src="images/shortcut-4.png" >website experts</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="main-content">
+        
+      
+
+        <br><br>
+        <div style="
+        margin-top:100px;
+    
+            width:600px;
+            height: 500px;
+            
+            margin: 20px;
+            padding: 20px;
+        border: 2px solid royalblue(129,189,44);">
+        <img src="IMG_9853.JPG" style="
+        width: 500px;
+        height: 500px;
+        background-color: blanchedalmond;
+        color: red;
+        border: 3px solid orange;
+        padding: 10px;
+        margin-left: 50px;
+        margin-top: 110px;
+       "> 
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="right-sidebar">
+        <div class="sidebar-title">
+            <h4>events</h4>
+            <a href="#">see all</a>
+
+        </div>
+        
+
+        
+    </div>
+    
+
+</div>
+   
+
+
+        
+       
+   
 </body>
 </html>

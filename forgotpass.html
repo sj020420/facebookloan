@@ -4,22 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
-    <form action="login.html">
+    <style>
+         *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        
+    }
+   
+    .fb-submit{
+
+display: flex;
+flex-direction: column;
+text-align: center;
+gap: 10px;
+
+}
+.fb-submit .login{
+border: none;
+outline: none;
+cursor: pointer;
+background: #187718;
+padding:10px;
+border-radius:6px;
+color: #fff;
+font-size:1.25;
+font-weight:300;
+transition:0.2s ease;
+
+}
+.fb-submit .login:hover{
+background: #0d65d9;
+
+}
+    </style>
+    <form style="display: block; background-color: rgb(127, 176, 255);
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    margin-left: 35%;
+    margin-bottom: 30%;
+    margin-top: 10%;
+    max-width: 400px;
+    border: 2px solid rgb(0, 0, 0);
+    " action="login.html">
+     <h1 style="color: #f9fbfd;align-items: center;font-size: 3rem;margin-bottom: 10px; margin-left: 50px; font-style: italic;">Facebook
+    </h1><br>
     
-        <label for="name">name</label>
-        <input type="text" id="name" placeholder="full name">
+        <label for="name" style="color: #fff;">Username</label>
+        <input type="text" id="name" placeholder="Enter your username">
         <br>
         <br>
-        <label for="num">phone number</label>
+        <label for="num" style="color: #fff;">Phone number</label>
         <input type="number" id="num" placeholder="phone number">
         <br><br>
-        <label for="pass"> new password<samp style="color: red;font-size: 30px;">*</samp></label>
-        <input type="password" id="pass" required placeholder="password">
+        <label for="pass" style="color: #fff;"> New password<samp style="color: red;font-size: 30px;">*</samp></label>
+        <input type="password" id="pass" required placeholder="New Password">
         <br><br>
-        <label for="pass">password<samp style="color: red;font-size: 30px;">*</samp></label>
-        <input type="password" id="pass" required placeholder="password">
-        <button>submit-bin</button>
+        <label for="pass" style="color: #fff;">password<samp style="color: red;font-size: 30px;">*</samp></label>
+        <input type="password" id="pass" required placeholder="Password">
+        <br>
+        <div class="fb-submit" >   
+            <button type="submit" class="login">Log in</button>
+                <br>
+                <br>
+            </div>
+        </form>
+        </div></div>
 </body>
 </html>
