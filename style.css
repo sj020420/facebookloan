@@ -32,7 +32,7 @@ nav{
 
 
 }
-..nav-left ul li img{
+.nav-left ul li img{
     width: 28px;
     margin: 0 15px;
 
@@ -56,7 +56,7 @@ nav{
     width: 18px;
 
 }
-..search-box input{
+.search-box input{
     width: 100px;
     background: transparent;
     padding: 10px;
